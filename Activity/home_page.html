@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <header>
-            <img src="logo.png" class="img" alt="logo" height="80" width="80">
+            <img src="images/logo.png" class="img" alt="logo" height="80" width="80">
             <div id="menu" class="fas fa-bars"> </div>
             <nav class="navbar">
                 <a href="home_page.html"> HOME </a>
@@ -28,13 +28,52 @@
 
     <!-- Let's do the Home section -->
         <div class="container">
-            <div class="image">
-                <img src="front face.jpeg" alt="front face" height="600" width="1100">
+            <!-- Slider Experiment -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- Start-->
+                    <input type="radio" name="radio-button" id="radio1">
+                    <input type="radio" name="radio-button" id="radio2">
+                    <input type="radio" name="radio-button" id="radio3">
+                    <input type="radio" name="radio-button" id="radio4">
+                    <!-- End -->
+                    <!-- Images slide start -->
+                    <div class="slide first">
+                        <img src="images/front face.jpeg" alt="front face" height="500" width="1100">
+                    </div>
+                    <div class="slide">
+                        <img src="images/new building 1.jpeg" alt="front face">
+                    </div>
+                    <div class="slide">
+                        <img src="images/stage front.jpeg" alt="front face">
+                    </div>
+                    <div class="slide">
+                        <img src="images/stage side.jpeg" alt="front face">
+                    </div>
+                    <!-- Images slide End -->
+                    <!-- Automatic Navigation start-->
+                    <div class="navigation auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!-- Automatic Navigation end-->
+                </div>
+                <!--Manual navigation start-->
+                <div class="navigation manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--Manual navigation end-->
             </div>
-            <div class="top-left">
+
+    <!--        <div class="top-left">
                 <h3> Sampaje Composite PU College and High School </h3>
                 <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, vel!</p>
-            </div>
+            </div>  -->
         </div>
     
     <section class="footer">
