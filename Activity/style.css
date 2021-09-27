@@ -96,6 +96,37 @@ header .navbar a:hover{
     display: none;
 }
 
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .image{
+    flex: 1 1 40rem;
+}
+
+/*.about .image img{
+    height: 160;
+    width: 100;
+} */
+
+.about .content{
+    flex: 1 1 40rem;
+}
+
+.about .content h3{
+    font-size: 4rem;
+    color: #666;
+}
+
+.about .content p{
+    font-size: 2rem;
+    color: #666;
+    padding: 1rem 1;
+}
+
 .teacher {
     display: flex;
     flex-wrap: wrap;
@@ -138,9 +169,6 @@ header .navbar a:hover{
     font-size: 1.5rem;
     padding: 1rem 0;
 }
-
-
-
 
 
 .footer .box-container {
@@ -274,13 +302,6 @@ header .navbar a:hover{
 
 
 
-
-
-
-
-
-
-
 @media (max-width:991px) {
     html{
         font-size: 55%;
@@ -306,6 +327,10 @@ header .navbar a:hover{
         border-top: .1rem solid rgba(0,0,0,.2);
         border-bottom: .1rem solid rgba(0,0,0,.2);
         clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header .navbar .active{
+        clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
     }
 
     header .navbar a{
