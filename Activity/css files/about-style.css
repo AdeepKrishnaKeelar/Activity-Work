@@ -178,35 +178,82 @@ section .btn2{
 .banner{
   position: relative;
   width: 100%;
-  min-height: 50vh;
+  min-height: 30vh;
   background: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+/*  justify-content: center;
+  align-items: center; */ 
 }
 
-.banner .content{
-  max-width: 200px;
+.banner .stuff{
+  max-width: 700px;
+  float: left; 
 }
 
-.banner .content img{
+.banner .stuff img{
   max-width: 100%;
-  margin-bottom: 15px;
-  float: left;
+  margin-bottom: 65px;
 }
 
-.banner .content h2{
+.banner .stuff h2{
   color: whitesmoke;
   font-weight: bold;
   font-size: 2em;
 }
 
-.banner .content p{
+.banner .stuff p{
   font-size: 1.5em;
   color: whitesmoke;
   font-weight: bold;
   margin: 15px 0 25px;
-  float: right;
+}
+
+.banner .stuff a{
+  position: relative;
+  text-transform: uppercase;
+  background: #fff;
+  color: #111;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.trailer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10000;
+  background: rgba(0,0,0,0.95);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.trailer .active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.trailer video{
+  position: relative;
+  max-width: 900px;
+  outline: none;
+}
+
+.close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  filter: invert(1);
+  max-width: 32px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
