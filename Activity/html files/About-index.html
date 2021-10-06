@@ -52,19 +52,52 @@
         </div>
       </div>
 
-      <!-- The Messages of the Principal and The Scretary-->
+      <!-- The Message of the Principal -->
         <div class="banner">
           <div class="stuff">
             <img src="../images/faculty/princi.jpg" alt="principal in chamber">
             <h2> The Message of the Principal of Sampaje Composite PU College and High School </h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt ipsam nulla corrupti quidem iure modi praesentium alias nihil at quaerat placeat ad atque, laboriosam facilis, optio tempora doloremque veritatis ducimus.</p>
-            <a href="#"> Click Here </a>
+            <a href="../../../videos/principal.mp4" onClick="toggle();"> Click Here </a>
           </div>
-        </div>
-        <div class="princ-video">
+        
+        <div class="trailer">
           <video src="../../../videos/principal.mp4" controls="true"> </video>
-          <img src="https://th.bing.com/th/id/OIP.1aoBOh50jMA3E6SVjj-6HQHaH_?pid=ImgDet&rs=1" class="close" alt="close">
+          <img src="https://th.bing.com/th/id/OIP.1aoBOh50jMA3E6SVjj-6HQHaH_?pid=ImgDet&rs=1" class="close" onClick="toggle();">
         </div>
+        <script>
+          function toggle() {
+          var trailer= document.querySelector(".trailer")
+          var video= document.querySelector("video")
+          trailer.classList.toggle("active");
+          video.pause();
+          video.currentTime = 0;
+        }
+        </script>
+
+      <!-- The Message of the Secretary -->
+      <div class="stuff1">
+        <img src="../images/faculty/msbhat2.jpg" alt="secretary in room">
+        <h2> The Message of the Secretary of Sampaje Composite PU College and High School </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt ipsam nulla corrupti quidem iure modi praesentium alias nihil at quaerat placeat ad atque, laboriosam facilis, optio tempora doloremque veritatis ducimus.</p>
+        <a href="../../../videos/secretary.mp4" onClick="toggle();"> Click Here </a>
+      </div>
+    </div>
+    
+    <div class="trailer">
+      <video src="../../../videos/secretary.mp4" controls="true"> </video>
+      <img src="https://th.bing.com/th/id/OIP.1aoBOh50jMA3E6SVjj-6HQHaH_?pid=ImgDet&rs=1" class="close" onClick="toggle();">
+    </div>
+    <script>
+      function toggle() {
+      var trailer= document.querySelector(".trailer")
+      var video= document.querySelector("video")
+      trailer.classList.toggle("active");
+      video.pause();
+      video.currentTime = 0;
+    }
+    </script>  
+    </div>
 
       <!-- Site footer -->
       <footer>
