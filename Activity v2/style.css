@@ -7,6 +7,9 @@ p {
     font-weight: 300;
     color: black;
 }
+body {
+    min-height: 1000px;
+}
 .banner {
     position: relative;
     width: 100%;
@@ -25,8 +28,14 @@ p {
     font-size: 4em;
     color: black;
 }
-.banner .content p {
+.banner .content h3 {
     font-size: 2.5em;
+    letter-spacing: 3px;
+    color: black;
+
+}
+.banner .content p {
+    font-size: 1em;
     color: white;
 }
 .btn {
@@ -43,4 +52,70 @@ p {
 }
 .btn:hover {
     letter-spacing: 6px;
+}
+
+.change-content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: white;
+    font-weight: bold;
+}
+@keyframes changetext {
+    0% {content:"Wise!";}
+    20% {content:"Better!";}
+    40% {content:"Human!";}
+    60% {content:"Better!";}
+    80% {content:"Useful!";}
+    100% {content:"Complete!";}
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header .sticky {
+    background: white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo {
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .sticky .logo {
+    color:black;
+}
+header .logo span {
+    color: tomato;
+}
+header .navigation {
+    position: relative;
+    display: flex;
+}
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+header .navigation li a:hover {
+    color: red;
+}
+header .sticky .navigation li a {
+    color: white;
+}
+header .sticky .navigation li a:hover {
+    color: blue;
 }
