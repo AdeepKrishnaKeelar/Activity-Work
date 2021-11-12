@@ -16,6 +16,9 @@
     </div>
     <script>
         let myChart = document.getElementById('myChart').getContext('2d');
+      //  Chart.defaults.global.defaultFontFamily = 'Lato';
+       // Chart.defaults.global.defaultFontSize = 18;
+       // Chart.defaults.global.defaultFontColor = '#777';        
 
 let barChart = new Chart(myChart,{
     type:'bar',
@@ -29,12 +32,22 @@ let barChart = new Chart(myChart,{
                 87.09,
                 62.06,
                 100
-            ]
+            ],
+            backgroundColor:[
+                'rgba(255,99,132,0.6)',
+                'rgba(255,99,132,0.6)',
+                'rgba(255,99,132,0.6)',
+                'rgba(255,99,132,0.6)',
+                'rgba(255,99,132,0.6)'
+            ],
+            borderWidth:1,
+            borderColor:'#777',
+            hoverBorderWidth:'#000'
         }]
     },
     options:{}
 
 });
-    </script>
+    </script> 
 </body>
 </html>
