@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 p {
     font-weight: 300;
@@ -161,4 +162,89 @@ section {
     font-style: italic;
     font-size: 1.5em;
     color: black;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.facilities .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.facilities .content .box {
+    width: 400px;
+    margin: 20px;
+    border: 5px solid black;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.facilities .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.facilities .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.facilities .content .box .text {
+    padding:15px 0 5px;
+}
+.facilities .content .box .text h3 {
+    font-weight: bold;
+    color: black;
+}
+.facilities .content .box .text p {
+    font-size: 0.8em;
+    color: black;
+}
+
+.expert .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.expert .content .box {
+    width: 300px;
+    margin: 20px;
+}
+.expert .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+.expert .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25%;
+}
+.expert .content .box .text {
+    padding: 15px 0 10px;
+}
+.expert .content .box .text h3 {
+    font-weight: 500;
+    color: black;
+}
+.expert .content .box .text li {
+    font-weight: 300;
+    color: black;
+}
+.expert .content .box .text li span {
+    color: royalblue;
 }
