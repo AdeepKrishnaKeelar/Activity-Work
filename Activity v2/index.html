@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Sampaje Education Society</title>
 </head>
@@ -19,7 +20,8 @@
                 <li><a href="#message">Message</a></li>
                 <li><a href="#facilities">Facilities</a></li>
                 <li><a href="#experts">Faculty</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
     </header>
@@ -388,6 +390,129 @@
                         <li> <i class="fas fa-phone-alt">: +91-9480158592 </i> </li>
                         <p> I have served as PT Teacher for 15 years. Many students have represented and won state level tournaments and sports events such as volleyball, kho-kho, atheletics. I also promote yogatharabiti. </p>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements" id="achievements">
+        <div class="title white">
+            <h2 class="titleText"> Our <span>Achievements </span> and <span>Progress </span></h2>
+            <p>Our students have achieved and have been making progress, putting the Institution to newer heights!</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./images/sports/sports.jpg" alt="sports">
+                </div>
+                <div class="text">
+                    <p>Our students have represented our college in the State Level Sports Meet conducted by PU Board and have won prizes</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./images/sports/sports2.jpg" alt="sports">
+                </div>
+                <div class="text">
+                    <p>Our students have represented our college in the State Level Sports Meet conducted by PU Board and have won prizes</p>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="container">
+                    <canvas id="myChart"> </canvas>
+                    <script>
+                        let myChart = document.getElementById("myChart").getContext('2d');
+                        let lineChart = new Chart(myChart,{
+                        type:'line',
+                                    data:{
+                                        labels:['17','18','19','20','21'],
+                                        datasets:[{
+                                            label:'High School Results',
+                                            label:'Pass Percent',
+                                            data:[
+                                                61.04,
+                                                96.15,
+                                                87.09,
+                                                62.06,
+                                                100
+                                        ],
+                                        backgroundColor:[
+                                        'rgba(255,99,132,0.6)',
+                                        'rgba(255,99,132,0.6)',
+                                        'rgba(255,99,132,0.6)',
+                                        'rgba(255,99,132,0.6)',
+                                        'rgba(255,99,132,0.6)'
+                                    ],
+                                    borderWidth:1,
+                                    borderColor:'#777',
+                                    hoverBorderWidth:'#000'
+                                }]
+                            },
+                            options:{
+                                title:{
+                                    display:true,
+                                    text:'Sampaje High School Final Results',
+                                    fontSize:25
+                                },
+                                legend:{
+                                    position:'right'
+                                }
+                            }
+
+                        });
+                    </script>
+                </div>
+                <div class="text">
+                    <p>The High School Pass present from the last five years.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="container">
+                    <canvas id="myChart1"> </canvas>
+                    <script>
+                        let myChart1 = document.getElementById("myChart1").getContext('2d');
+                        let lineChart1 = new Chart(myChart1,{
+                        type:'line',
+                                    data:{
+                                        labels:['18','19','20','21'],
+                                        datasets:[{
+                                            label:'High School Results',
+                                            label:'Pass Percent',
+                                            data:[
+                                                94,
+                                                100,
+                                                93.5,
+                                                100
+                                        ],
+                                        backgroundColor:[
+                                        'rgba(255,99,132,0.6)',
+                                        'rgba(255,99,132,0.6)',
+                                        'rgba(255,99,132,0.6)',
+                                        'rgba(255,99,132,0.6)'
+                                    ],
+                                    borderWidth:1,
+                                    borderColor:'#777',
+                                    hoverBorderWidth:'#000'
+                                }]
+                            },
+                            options:{
+                                title:{
+                                    display:true,
+                                    text:'Sampaje High School Final Results',
+                                    fontSize:25
+                                },
+                                legend:{
+                                    position:'right'
+                                }
+                            }
+
+                        });
+                    </script>
+                </div>
+                <div class="text">
+                    <p>The PU section Pass present from the last five years.</p>
                 </div>
             </div>
         </div>
