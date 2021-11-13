@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Sampaje Education Society</title>
 </head>
 <body>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <header>
         <a href="#" class="logo"><img src="./images/logo.png" alt="logo" style="height: 80px; width:80px;">S<span>E</span>S</a>
             <ul class="navigation">
@@ -82,9 +85,10 @@
     </section>
 
     <section class="facilities" id="facilities">
-        <class class="title">
+        <div class="title">
             <h2 class="titleText"><span> Facilities </span> of our Institution </h2>
             <p>An Institution invests to provide the facilities for the nurturing and development of students</p>
+        </div>
             <div class="content">
                 <div class="box">
                     <div class="imgBx">
@@ -468,7 +472,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box">           
                 <div class="container">
                     <canvas id="myChart1"> </canvas>
                     <script>
@@ -512,10 +516,92 @@
                     </script>
                 </div>
                 <div class="text">
-                    <p>The PU section Pass present from the last five years.</p>
+                    <p>The PU section Pass present from the last four years.</p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="title">
+            <h2 class="titleText"><span>Gallery</span></h2>
+            <p> Glimpses of our lifes! </p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/drone/Photo/5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cultural/cultural1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cultural/cultural10.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/history/history.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cultural/cultural5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cultural/cultural3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/history/history3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cultural/cultural8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/sports/sports6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cultural/cultural2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cultural/cultural4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/history/firstbatch.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/sports/sports5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/cultural/culutural9.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+      
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+              },
+              loop: true,
+              autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+            });
+          </script>
+      
     </section>
     
     <script type="text/javascript">

@@ -29,43 +29,43 @@
     <script>
         let myChart = document.getElementById("myChart").getContext('2d');  
 
-    let barChart = new Chart(myChart,{
-    type:'line',
-    data:{
-        labels:['17','18','19','20','21'],
-        datasets:[{
-            label:'Pass Percent',
-            data:[
-                61.04,
-                96.15,
-                87.09,
-                62.06,
-                100
-            ],
-            backgroundColor:[
-                'rgba(255,99,132,0.6)',
-                'rgba(255,99,132,0.6)',
-                'rgba(255,99,132,0.6)',
-                'rgba(255,99,132,0.6)',
-                'rgba(255,99,132,0.6)'
-            ],
-            borderWidth:1,
-            borderColor:'#777',
-            hoverBorderWidth:'#000'
-        }]
-    },
-    options:{
-        title:{
-            display:true,
-            text:'Sampaje High School Final Results',
-            fontSize:25
+        let barChart = new Chart(myChart,{
+        type:'line',
+        data:{
+            labels:['17','18','19','20','21'],
+            datasets:[{
+                label:'Pass Percent',
+                data:[
+                    61.04,
+                    96.15,
+                    87.09,
+                    62.06,
+                    100
+                ],
+                backgroundColor:[
+                    'rgba(255,99,132,0.6)',
+                    'rgba(255,99,132,0.6)',
+                    'rgba(255,99,132,0.6)',
+                    'rgba(255,99,132,0.6)',
+                    'rgba(255,99,132,0.6)'
+                ],
+                borderWidth:1,
+                borderColor:'#777',
+                hoverBorderWidth:'#000'
+            }]
         },
-        legend:{
-            position:'right'
+        options:{
+            title:{
+                display:true,
+                text:'Sampaje High School Final Results',
+                fontSize:25
+            },
+            legend:{
+                position:'right'
+            }
         }
-    }
 
-});
+    });
     </script> 
 </body>
 </html>
