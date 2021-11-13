@@ -17,8 +17,9 @@
 <body>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <header>
-        <a href="#" class="logo"><img src="./images/logo.png" alt="logo" style="height: 80px; width:80px;">S<span>E</span>S</a>
-            <ul class="navigation">
+        <a href="#banner" class="logo"><img src="./images/logo.png" alt="logo" style="height: 80px; width:80px;">S<span>E</span>S</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>    
+        <ul class="navigation">
                 <li><a href="#banner">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#message">Message</a></li>
@@ -34,7 +35,7 @@
             <h2>Sampaje Composite PU College and High School</h2>
             <h3>Education maketh man <span class="change-content"> </span> </h3>
             <p>Education is the awakening of oneself!</p> 
-            <a href="#" class="btn">Our Menu</a>
+            <a href="#about" class="btn">Our Menu</a>
         </div>
     </section>
 
@@ -614,18 +615,46 @@
             <h3> Contact Us </h3>
             <p> Here are some other details - </p>
             <ul>
-                <li> <i class="fas fa-map"> Kallugundi, Sampaje DK Mangalore </i></li>
+                <li> <i class="fas fa-map">: Kallugundi, Sampaje DK Mangalore </i></li>
                 <li> <i class="fas fa-phone-alt">: +91- </i></li>
                 <li> <i class="material-icons">email</i>: info-sampaje@gmail.com</li>
             </ul>
+            <br>
+            <div class="inputBox">
+                <input type="text" id="Name" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" id="Email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <input type="text" id="Subject" placeholder="Subject">
+            </div>
+            <div class="inputBox">
+                <textarea id="Details" placeholder="Details"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" id="Submit" value="Send">
+            </div>
         </div>
     </section>
+
+    <div class="copyRightText">
+        <p> Sampaje Education Society 2021. All Rights Reserved </p> <br>
+        <p> Made by NIE 5th semester CSE students. </p>
+    </div>
     
-    <script>
-        window.addEventListener('scroll',function(){
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
             const header = document.querySelector('header');
             header.classList.toggle("sticky",window.scrollY>0);
         });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
     </script>
 </body>
 </html>

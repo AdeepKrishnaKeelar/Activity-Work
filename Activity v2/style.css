@@ -9,7 +9,7 @@ p {
     color: black;
 }
 .banner {
-    position: relative;
+    position:relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -78,8 +78,8 @@ header {
     align-items: center;
     transition: 0.5s;
 }
-header .sticky {
-    background: white;
+header.sticky {
+    background: rgba(0,0,0,0.05);
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
@@ -89,7 +89,7 @@ header .logo {
     font-size: 2em;
     text-decoration: none;
 }
-header .sticky .logo {
+header.sticky .logo {
     color:black;
 }
 header .logo span {
@@ -98,6 +98,18 @@ header .logo span {
 header .navigation {
     position: relative;
     display: flex;
+}
+header .navigation.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
 }
 header .navigation li {
     list-style: none;
@@ -111,10 +123,10 @@ header .navigation li a {
 header .navigation li a:hover {
     color: red;
 }
-header .sticky .navigation li a {
-    color: white;
+header.sticky .navigation li a {
+    color: black;
 }
-header .sticky .navigation li a:hover {
+header.sticky .navigation li a:hover {
     color: blue;
 }
 
@@ -315,3 +327,163 @@ section {
     width: 100%;
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent,#0006);
   }
+.contact {
+    background:url(./images/drone/Photo/7.jpg);
+    background-size: cover;
+}
+.contactForm {
+    padding: 75px 50px;
+    background: white;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3 {
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm li {
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: black;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: black;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: white;
+    background: red;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.copyRightText {
+    padding: 5px 30px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.copyRightText p {
+    color: black;
+    font-size: 1em;
+}
+
+@media (max-width:991px) {
+    header, header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .navigation.active {
+        width: 100%;
+        height: calc(100%-68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6em;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(https://css-tricks.com/wp-content/uploads/2012/10/threelines.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(https://www.pinclipart.com/picdir/middle/35-356107_close-button-icon-png-clipart.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: black;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 180%;
+    }
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .facilities .content {
+        margin-top: 20px;
+    }
+    .facilities .content .box {
+        margin: 10px;
+    }
+    .facilities .content .box .imgBx {
+        height: 260px;
+    }
+    .title {
+        text-align: center;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
+    .achievements .content .box {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+ }
+ @media (max-width: 480px) {
+     .banner .content h2 {
+         font-size: 2.2em;
+         color: white;
+     }
+ }
