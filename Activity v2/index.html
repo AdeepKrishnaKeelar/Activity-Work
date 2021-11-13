@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -25,7 +26,7 @@
                 <li><a href="#experts">Faculty</a></li>
                 <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
     </header>
     <section class="banner" id="banner">
@@ -603,8 +604,24 @@
           </script>
       
     </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>Contact</span> Us</h2>
+            <p>Did you like our work? Do you have anything to tell us? We'd love to hear from you!</p>
+        </div>
+        <div class="contactForm">
+            <h3> Contact Us </h3>
+            <p> Here are some other details - </p>
+            <ul>
+                <li> <i class="fas fa-map"> Kallugundi, Sampaje DK Mangalore </i></li>
+                <li> <i class="fas fa-phone-alt">: +91- </i></li>
+                <li> <i class="material-icons">email</i>: info-sampaje@gmail.com</li>
+            </ul>
+        </div>
+    </section>
     
-    <script type="text/javascript">
+    <script>
         window.addEventListener('scroll',function(){
             const header = document.querySelector('header');
             header.classList.toggle("sticky",window.scrollY>0);
